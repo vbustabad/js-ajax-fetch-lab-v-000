@@ -21,7 +21,7 @@ function forkRepo() {
 //   const forkedLab = `<a href=${json.html_url}>Forked Lab</a>`;
 //   document.getElementById('results').innerHTML = forkedLab;
 // }
-// 
+//
 // function createIssue() {
 //   const postData = {
 //     title: document.getElementById("title").value,
@@ -39,7 +39,7 @@ function forkRepo() {
 //     .then(json => getIssues())
 //   }
 // }
-// 
+//
 // function getIssues() {
 //   fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
 //     headers: {
