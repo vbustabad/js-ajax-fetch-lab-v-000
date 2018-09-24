@@ -1,4 +1,4 @@
-const token = '';
+const token = 'c1dd03d27b036d91469e88be2a83d5a1cc995502';
 
 function getToken() {
   //change to your token to run in browser, but set
