@@ -1,6 +1,6 @@
 function getToken() {
   const token = FETCH_LAB_TOKEN;
-  return token;
+  return '';
 }
 
 function forkRepo() {
