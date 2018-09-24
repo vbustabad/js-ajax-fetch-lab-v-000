@@ -1,10 +1,7 @@
 const token = 'c1dd03d27b036d91469e88be2a83d5a1cc995502';
 
 function getToken() {
-  //change to your token to run in browser, but set
-  //back to '' before committing so all tests pass
   return token;
-  // return '';
 }
 
 function forkRepo() {
@@ -14,7 +11,7 @@ function forkRepo() {
     {
      method:'POST',
        headers: {
-         Authorization: `token ${getToken()}`
+         Authorization: `token`
        }
      })
   .then(res => res.json())
@@ -36,7 +33,7 @@ function createIssue() {
       {
       method: 'POST',
       headers: {
-        Authorization: `token ${getToken()}`
+        Authorization: `token`
       },
       body: JSON.stringify(postData)
     }).then(resp => resp.json())
@@ -47,7 +44,7 @@ function createIssue() {
 function getIssues() {
   fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
     headers: {
-      Authorization: `token ${getToken()}`
+      Authorization: `token`
     }
     })
     .then(issues => issues.json())
