@@ -1,6 +1,6 @@
-const token = FETCH_LAB_TOKEN;
 
 function getToken() {
+  const token = FETCH_LAB_TOKEN;
   return token;
 }
 
