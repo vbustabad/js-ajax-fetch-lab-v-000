@@ -33,12 +33,10 @@ function createIssue() {
       method: 'POST',
       headers: {
         Authorization: `token ${getToken()}`
-      },
-      body: JSON.stringify(postData)
+      }
     }).then(resp => resp.json())
     .then(json => getIssues())
   }
-}
 //
 // function getIssues() {
 //   fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
