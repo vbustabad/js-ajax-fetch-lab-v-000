@@ -16,10 +16,10 @@ function forkRepo() {
   .then(json => showResults(json))
 }
 
-// function showResults(json) {
-//   const forkedLab = `<a href=${json.html_url}>Forked Lab</a>`;
-//   document.getElementById('results').innerHTML = forkedLab;
-// }
+function showResults(json) {
+  const forkedLab = `<a href=${json.html_url}>Forked Lab</a>`;
+  document.getElementById('results').innerHTML = forkedLab;
+}
 //
 // function createIssue() {
 //   const postData = {
