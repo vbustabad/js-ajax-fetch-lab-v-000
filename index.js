@@ -22,7 +22,7 @@ function showResults(json) {
 }
 
 function createIssue() {
-  const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
+  const repo = '/js-ajax-fetch-lab';
   const postData = {
     title: document.getElementById("title").value,
     body: document.getElementById("body").value
