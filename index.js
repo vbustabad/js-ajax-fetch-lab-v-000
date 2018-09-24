@@ -37,13 +37,14 @@ function createIssue() {
     }).then(resp => resp.json())
     .then(json => getIssues())
   }
-//
-// function getIssues() {
-//   fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
-//     headers: {
-//       Authorization: `token ${getToken()}`
-//     }
-//     })
-//     .then(issues => issues.json())
-//     .then(json => console.log(json))
-// }
+
+function getIssues() {
+  const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
+  fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
+    headers: {
+      Authorization: `token ${getToken()}`
+    }
+    })
+    .then(issues => issues.json())
+    .then(json => console.log(json))
+}
