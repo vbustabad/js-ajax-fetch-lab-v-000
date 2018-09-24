@@ -40,7 +40,6 @@ function createIssue() {
   }
 
 function getIssues() {
-  const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
     headers: {
       Authorization: `token ${getToken()}`
