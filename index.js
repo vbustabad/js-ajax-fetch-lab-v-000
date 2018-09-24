@@ -1,4 +1,4 @@
-const token = '';
+const token = FETCH_LAB_TOKEN;
 
 function getToken() {
   return token;
