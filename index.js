@@ -1,8 +1,4 @@
-const token = '';
-
 function getToken() {
-  //change to your token to run in browser, but set
-  //back to '' before committing so all tests pass
   return '';
 }
 
@@ -26,6 +22,7 @@ function showResults(json) {
 }
 
 function createIssue() {
+  const repo = 'js-ajax-fetch-lab';
   const postData = {
     title: document.getElementById("title").value,
     body: document.getElementById("body").value
@@ -37,11 +34,10 @@ function createIssue() {
       headers: {
         Authorization: `token ${getToken()}`
       },
-      body: JSON.stringify(postData)
+    body: JSON.stringify(postData)
     }).then(resp => resp.json())
     .then(json => getIssues())
   }
-}
 
 function getIssues() {
   fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
