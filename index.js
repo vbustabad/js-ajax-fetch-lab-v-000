@@ -1,4 +1,4 @@
-const token = 'c1dd03d27b036d91469e88be2a83d5a1cc995502';
+const token = '';
 
 function getToken() {
   return token;
@@ -11,7 +11,7 @@ function forkRepo() {
     {
      method:'POST',
        headers: {
-         Authorization: `token`
+         Authorization: `token ${getToken()}`
        }
      })
   .then(res => res.json())
@@ -33,7 +33,7 @@ function createIssue() {
       {
       method: 'POST',
       headers: {
-        Authorization: `token`
+        Authorization: `token ${getToken()}`
       },
       body: JSON.stringify(postData)
     }).then(resp => resp.json())
@@ -44,7 +44,7 @@ function createIssue() {
 function getIssues() {
   fetch(`https://api.github.com/repos/vbustabad/js-ajax-fetch-lab/issues`, {
     headers: {
-      Authorization: `token`
+      Authorization: `token ${getToken()}`
     }
     })
     .then(issues => issues.json())
